@@ -22,6 +22,9 @@ function houseChangeEventHandler(e) {
                 ul.addEventListener('mouseover', (e) => {
                     e.target.style.color = 'purple';
                 })
+                ul.addEventListener('mouseout', (e) => {
+                    e.target.style.color = 'black';
+                })
 
             ul.textContent = character.name
             ulArea.appendChild(ul)
