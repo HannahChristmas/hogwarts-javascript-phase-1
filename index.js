@@ -1,4 +1,3 @@
-
 fetch('http://hp-api.herokuapp.com/api/characters')
     .then((res) => res.json())
     .then((characterData) => {
@@ -9,11 +8,6 @@ let headerPic = document.querySelector('.header-pic');
 headerPic.addEventListener('dblclick', (e) => {
     headerPic.classList.toggle('switch-pic');
 });
-
-// function changeHeaderPic(e){
-//     e.target.src = "https://images.ctfassets.net/usf1vwtuqyxm/7lnoakM2cp5csDVoVVD0ZN/87025fa2ca8f22f3eeed6652b2dbcc51/HP-F1-philosophers-stone-great-hall-halloween-floating-pumpkins-feast-web-landscape?fm=jpg&q=70&w=2560"
-// }
-
 
 let allCharacters = [];
 
@@ -30,9 +24,7 @@ function houseChangeEventHandler(e) {
     allCharacters.forEach(character => {
         if(character.house === selectedHouse){
             const ul = document.createElement('ul')
-                ul.addEventListener('mouseover', (e) => {
-                    e.target.style.color = 'purple';
-                })
+                ul.addEventListener('mouseover', e => e.target.style.color = 'purple')
                 ul.addEventListener('mouseout', (e) => {
                     e.target.style.color = 'black';
                 })
@@ -45,6 +37,10 @@ function houseChangeEventHandler(e) {
             ulArea.appendChild(ul)
         }
     })
+}
+
+function mouseoverPurple(e){
+    e.target.style.color = "purple";
 }
 
 const character = []
