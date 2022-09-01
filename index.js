@@ -63,7 +63,11 @@ function renderCharacterCard(e) {
     const pAncestry = document.createElement('p')
     
     img.id ='charPhotos'
-    img.src = `${character.image}`
+    if(character.image === ''){
+        img.src = 'https://m.media-amazon.com/images/I/91v4ui0Si7S._AC_SY606_.jpg'
+    } else {
+        img.src = `${character.image}`
+    }
     h3.textContent = `${character.name}`
     pHouse.textContent = `House: ${character.house}`
     if(character.patronus === ''){
