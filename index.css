@@ -51,7 +51,11 @@ h1 {
     padding-bottom: 15px;
 }
 
-#header-pic {
+.header-pic {
     width: 50rem;
     height: 20rem;
+}
+
+.switch-pic {
+    content: url('https://images.ctfassets.net/usf1vwtuqyxm/7lnoakM2cp5csDVoVVD0ZN/87025fa2ca8f22f3eeed6652b2dbcc51/HP-F1-philosophers-stone-great-hall-halloween-floating-pumpkins-feast-web-landscape?fm=jpg&q=70&w=2560')
 }

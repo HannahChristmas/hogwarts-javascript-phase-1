@@ -5,12 +5,15 @@ fetch('http://hp-api.herokuapp.com/api/characters')
         allCharacters = characterData
     })
 
-let headerPic = document.getElementById('header-pic');
-headerPic.addEventListener('dblclick', changeHeaderPic);
+let headerPic = document.querySelector('.header-pic');
+headerPic.addEventListener('dblclick', (e) => {
+    headerPic.classList.toggle('switch-pic');
+});
 
-function changeHeaderPic(e){
-    e.target.src = "https://images.ctfassets.net/usf1vwtuqyxm/7lnoakM2cp5csDVoVVD0ZN/87025fa2ca8f22f3eeed6652b2dbcc51/HP-F1-philosophers-stone-great-hall-halloween-floating-pumpkins-feast-web-landscape?fm=jpg&q=70&w=2560"
-}
+// function changeHeaderPic(e){
+//     e.target.src = "https://images.ctfassets.net/usf1vwtuqyxm/7lnoakM2cp5csDVoVVD0ZN/87025fa2ca8f22f3eeed6652b2dbcc51/HP-F1-philosophers-stone-great-hall-halloween-floating-pumpkins-feast-web-landscape?fm=jpg&q=70&w=2560"
+// }
+
 
 let allCharacters = [];
 
