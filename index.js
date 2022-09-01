@@ -59,7 +59,7 @@ function renderCharacterCard(e) {
     if(character.patronus === ''){
         pPatronus.textContent = 'Patronus: Unknown';
        } else {
-        pPatronus.textContent = `Patronus: ${character.patronus}`
+        pPatronus.textContent = `Patronus: ${character.patronus.charAt(0).toUpperCase() + character.patronus.slice(1)}`
        }
     if(character.ancestry === ''){
         pAncestry.textContent = 'Ancestry: Unknown';
