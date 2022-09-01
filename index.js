@@ -61,7 +61,11 @@ function renderCharacterCard(e) {
        } else {
         pPatronus.textContent = `Patronus: ${character.patronus}`
        }
+    if(character.ancestry === ''){
+        pAncestry.textContent = 'Ancestry: Unknown';
+    } else {
     pAncestry.textContent = `Ancestry: ${character.ancestry}`
+    }
 
     ul.append(img, h3, pHouse, pPatronus, pAncestry)
     document.getElementById('character-card').append(ul)
