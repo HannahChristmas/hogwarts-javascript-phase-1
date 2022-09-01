@@ -5,5 +5,29 @@
     color: #c5d7ec;
     font-size: 3rem;
     font-family: 'Seaweed Script', cursive;
-
 }
+
+body {
+    background-color: white;
+}
+
+h1 {
+    margin: 0 auto 0 auto;
+}
+
+.main-container {
+    background-color: white;
+    text-align: center;
+}
+
+.float-container {
+    background-color: white;
+    text-align: center;
+}
+
+.character-container {
+    background-color: white;
+    display: inline-block;
+    width: 30%;
+}
+
