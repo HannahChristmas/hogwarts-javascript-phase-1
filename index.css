@@ -48,6 +48,7 @@ h1 {
     width: 200px;
     height: 300px;
     object-fit: cover;
+    margin-bottom: 15px;
     background-image: url('https://m.media-amazon.com/images/I/91v4ui0Si7S._AC_SY606_.jpg');
 }
 
