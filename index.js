@@ -45,11 +45,17 @@ function renderCharacterCard(e) {
     const ul = document.createElement('ul')
     const img = document.createElement('img')
     const h3 = document.createElement('h3')
+    const pHouse = document.createElement('p')
+    const pPatronus = document.createElement('p')
+    const pAncestry = document.createElement('p')
    
     img.src = `${character.image}`
-    h3.textContent = `House: ${character.house}`
+    h3.textContent = `${character.name}`
+    pHouse.textContent = `House: ${character.house}`
+    pPatronus.textContent = `Patronus: ${character.patronus}`
+    pAncestry.textContent = `Ancestry: ${character.ancestry}`
 
-    ul.append(img, h3)
+    ul.append(img, h3, pHouse, pPatronus, pAncestry)
     document.querySelector('.float-container').append(ul)
     allCharacters.push(ul);
 }
