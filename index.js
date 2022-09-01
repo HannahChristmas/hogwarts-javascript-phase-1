@@ -41,6 +41,7 @@ let ulCharacter = document.getElementById('character-card')
 
 function renderCharacterCard(e) { 
     let character = allCharacters.filter(character => character.name === e.target.outerText)[0];
+    ulCharacter.innerHTML = ''
 
     const ul = document.createElement('ul')
     const img = document.createElement('img')
