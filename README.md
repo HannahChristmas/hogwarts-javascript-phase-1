@@ -19,7 +19,7 @@ This is an application that allows the user to filter Harry Potter characters by
 My blog post about event listeners can be found [here.](https://medium.com/@hc109909/adding-event-listeners-in-javascript-aea54489ab6)
 
 ## Video Link
-My Youtube video about this project can be found here:
+My Youtube video about this project can be found [here.](https://youtu.be/SyTkEh0SlZM)
 
 ## Resources
 * [Harry Potter API](https://hp-api.herokuapp.com/) 
