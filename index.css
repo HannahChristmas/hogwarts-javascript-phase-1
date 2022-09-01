@@ -43,10 +43,15 @@ h1 {
     text-align: center;
 }
 
-#charPhotos{
+#charPhotos {
     float: left;
     width: 200px;
     height: 300px;
     object-fit: cover;
     padding-bottom: 15px;
+}
+
+#header-pic {
+    width: 50rem;
+    height: 20rem;
 }
