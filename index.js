@@ -14,6 +14,7 @@ const ulArea = document.querySelector('ul');
 
 function houseChangeEventHandler(e) {
     ulArea.innerHTML = '';
+    ulCharacter.innerHTML = '';
     let selectedHouse = e.target.value;
 
     allCharacters.forEach(character => {
