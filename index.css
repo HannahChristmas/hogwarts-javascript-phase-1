@@ -31,3 +31,22 @@ h1 {
     width: 30%;
 }
 
+#character-card-container {
+    background-color: white;
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+}
+
+#charPhotos{
+    float: left;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    padding-bottom: 15px;
+}

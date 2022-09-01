@@ -48,7 +48,8 @@ function renderCharacterCard(e) {
     const pHouse = document.createElement('p')
     const pPatronus = document.createElement('p')
     const pAncestry = document.createElement('p')
-   
+    
+    img.id ='charPhotos'
     img.src = `${character.image}`
     h3.textContent = `${character.name}`
     pHouse.textContent = `House: ${character.house}`
