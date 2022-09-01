@@ -37,7 +37,7 @@ function houseChangeEventHandler(e) {
 }
 
 const character = []
-let ulCharacter = document.querySelector('.character-container')
+let ulCharacter = document.getElementById('character-card')
 
 function renderCharacterCard(e) { 
     let character = allCharacters.filter(character => character.name === e.target.outerText)[0];
@@ -57,6 +57,6 @@ function renderCharacterCard(e) {
     pAncestry.textContent = `Ancestry: ${character.ancestry}`
 
     ul.append(img, h3, pHouse, pPatronus, pAncestry)
-    document.querySelector('.float-container').append(ul)
+    document.getElementById('character-card').append(ul)
     allCharacters.push(ul);
 }
