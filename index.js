@@ -44,6 +44,7 @@ function renderCharacterCard(e) {
     let character = allCharacters.filter(character => character.name === e.target.outerText)[0];
     ulCharacter.innerHTML = ''
 
+
     const ul = document.createElement('ul')
     const img = document.createElement('img')
     const h3 = document.createElement('h3')
@@ -55,7 +56,11 @@ function renderCharacterCard(e) {
     img.src = `${character.image}`
     h3.textContent = `${character.name}`
     pHouse.textContent = `House: ${character.house}`
-    pPatronus.textContent = `Patronus: ${character.patronus}`
+    if(character.patronus === ''){
+        pPatronus.textContent = 'Patronus: Unknown';
+       } else {
+        pPatronus.textContent = `Patronus: ${character.patronus}`
+       }
     pAncestry.textContent = `Ancestry: ${character.ancestry}`
 
     ul.append(img, h3, pHouse, pPatronus, pAncestry)

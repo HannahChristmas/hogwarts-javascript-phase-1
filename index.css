@@ -28,7 +28,7 @@ h1 {
 .character-container {
     background-color: white;
     display: inline-block;
-    width: 30%;
+    width: 20%;
 }
 
 #character-card-container {
@@ -43,7 +43,7 @@ h1 {
     text-align: center;
 }
 
-#charPhotos {
+#charPhotos{
     float: left;
     width: 200px;
     height: 300px;
